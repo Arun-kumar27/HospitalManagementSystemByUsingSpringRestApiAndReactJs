@@ -29,7 +29,7 @@ public class hospitalDAO
 		 return respositiry.getAllTheData(name, gender, emailid);
 		
 	}
-	//Delete All the patient data by using EMAILID
+	//Delete All the patient data by using name
 	public int deletetehpatientdata(String name)
 	{
 	    return  respositiry.deletePateinetDetails(name);

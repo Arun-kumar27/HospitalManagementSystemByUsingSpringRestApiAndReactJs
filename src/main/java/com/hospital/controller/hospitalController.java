@@ -36,7 +36,7 @@ public class hospitalController
 	}
 	//These http method is used to perform the update operation.
 	//These method is also send the data in the JSON format.
-	@PutMapping("update")
+	@PutMapping("/update")
 	public ResponseEntity<String> updatdetails(@RequestBody hospitalEntity entity)
 	{
 		return service.updateresultofthepatientbyusongemalid(entity);
@@ -44,7 +44,7 @@ public class hospitalController
 	
 	//These HTTP method is used to perform the select or get mapping operation.
 	//In these method user send the data in the url format.
-	@GetMapping("get")
+	@GetMapping("/get")
 	public List<hospitalEntity> getallthedataofthepatient(@RequestParam("value") String value)
 	{
 		 return service.getThePateintDataByUsingNameOrGender(value, value, value);
@@ -52,7 +52,7 @@ public class hospitalController
 	
 	//These HTTP method is used to perform delete operation or delete mapping.
 	//In these method user send the request request in the URL format.
-	@DeleteMapping("delete")
+	@DeleteMapping("/delete")
 	public int deletethepatientdetailsbyusingname(@RequestParam("name") String name)
 	{
 		return service.deletethedata(name);

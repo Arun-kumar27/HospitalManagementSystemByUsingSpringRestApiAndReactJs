@@ -34,7 +34,7 @@ public class hospitalService
 	    	return new ResponseEntity<hospitalEntity>(result, HttpStatus.INTERNAL_SERVER_ERROR);
 	    }
 	}
-	//updata operation 
+	//update operation 
 	public ResponseEntity<String> updateresultofthepatientbyusongemalid(hospitalEntity hospitalEntity)
 	{
 		int data=dao.updatepatientdetailsBususingEmalid(hospitalEntity);

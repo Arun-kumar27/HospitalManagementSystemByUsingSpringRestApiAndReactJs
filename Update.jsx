@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
 
-const api = "http://localhost:9559/login";
+const api = "http://localhost:9559/update";
 
 const App = () => {
   const [form, setForm] = useState({
@@ -103,7 +103,7 @@ const App = () => {
 
     } catch (error) {
       console.error("Error:", error);
-      alert("❌ Failed to insert patient details.");
+      alert("❌ Failed to update patient details.");
     }
   };
 
